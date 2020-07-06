@@ -20,13 +20,13 @@ export default ({ children }) => {
         <div className="site-title">
           <Link to="/">{data.site.siteMetadata.title}</Link>
         </div>
-        <div className="site-nav-link">
+        <div className="navigation">
           <Link to="/">Home</Link>
         </div>
-        <div className="site-nav-link">
-          <Link to="/virtualbox">Virtual Box Images</Link>
+        <div className="navigation">
+          <Link to="/contact">Virtual Box Images</Link>
         </div>
-        <div className="site-nav-link">
+        <div className="navigation">
           <Link to="/vmware">VMWare Images</Link>
         </div>
         <Navigation />

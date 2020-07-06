@@ -112,8 +112,8 @@ a {
   font-weight: 700;
 }
 .hero-header {
-  padding: 0 0 25px;
-  max-width: 980px;
+  // padding: 0 0 25px;
+  max-width: 1140px;
 }
 .headline {
   font-size: 36px;
@@ -149,7 +149,7 @@ a {
 }
 .primary-content {
   font-size: 18px;
-  margin-bottom: 32px;
+  margin-bottom: 10px;
   line-height: 1.5;
   font-weight: 300;
 }
@@ -215,11 +215,15 @@ a {
 }
 .grids {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 32px;
   margin-top: 32px;
 }
+.card-image {
+  margin:10px;
+}
 .card {
+  text-align: center !important;
   display: grid;
   background-color: var(--card-bg);
   border-radius: 9px;
@@ -231,6 +235,7 @@ a {
     color: var(--primary-color);
   }
   > a img {
+    align-self: center;
     display: block;
   }
   > header {
@@ -264,29 +269,35 @@ a {
     font-weight: 700;
   }
 }
+
+// .site-header {
+//   display: flex;
+//   justify-content: space-between;
+//   padding: 20px 0;
+//   background: var(--site-header);
+//   margin-bottom: 32px;
+//   align-items: center;
+// }
+
 .search-form-container {
-  background-color: var(--contact-bg);
-  padding: 10px;
+  // background-color: var(--contact-bg);
+  padding: 5px;
+  padding-right:0px;
   // border: 1px solid var(--contact-bdr);
-  width: 70%;
   border-radius: 9px;
-  label {
-    // display: block;
-    margin-bottom: 0.5rem;
-    margin-right: 0.5rem;
-    color: var(--text-secondary-color);
-  }
   input[type=text]
    {
+    float: right;
+    // clear: both;
     appearance: none;
     border: 1px solid var(--card-shadow);
     color: var(--text-secondary-color);
     border-radius: 6px;
     line-height: 32px;
     padding: 6px 12px;
-    width: calc(50% - 24px);
-    margin-bottom: 1.5rem;
-    margin-right: 1.5rem;
+    // width: calc(50% - 24px);
+    // margin-bottom: 1.5rem;
+    // margin-right: 1.5rem;
     background-color: var(--input-bg);
     font-family: $font-family;
   }
@@ -333,13 +344,13 @@ a {
 @media only screen 
 and (min-width: 768px) {
 .grids {
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 }
 @media only screen 
   and (min-width: 1024px) {
   .grids {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
   .two-grids {
     display: grid;

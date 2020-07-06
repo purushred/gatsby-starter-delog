@@ -22,13 +22,12 @@ export default () => (
           dangerouslySetInnerHTML={{ __html: data.site.siteMetadata.home.description}}
         />
         <div>
-          <form className="search-form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
-            <div>
-              <label htmlFor="searchText">Search for Images</label>
-              <input type="text" name="searchText" id="searchText"/>
-              <input type="submit" className="button -primary" style={{marginRight: 0}} />
-            </div>
-          </form>
+          <div className="search-form-container">
+          <input placeholder="Search images here!" type="text" name="searchText" id="searchText"/>
+          </div>
+          {/* <form className="search-form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post"> */}
+              
+          {/* </form> */}
         </div>
       </div>
     )}
