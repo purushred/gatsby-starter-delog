@@ -1,9 +1,9 @@
 {
-  "title": "Delog",
+  "title": "PickVM",
   "siteUrl": "https://covid19live.app",
   "description": "App for readymade images for VMWare and VirtualBox",
   "home": {
-    "title": "Hi! I'm Delog",
+    "title": "Hi! Welcome to PickVM",
     "description": "Welcome to pickvm site, here you will have ready to use images for VMWare and VirtualBox readymade for users."
   }
 }

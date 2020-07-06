@@ -69,7 +69,7 @@ a {
   max-width: 1140px;
   margin: 0 auto;
   img {
-    max-width: 100%;
+    max-width: 50%;
   }
 }
 .navigation {
@@ -112,7 +112,7 @@ a {
   font-weight: 700;
 }
 .hero-header {
-  padding: 0 0 64px;
+  padding: 0 0 25px;
   max-width: 980px;
 }
 .headline {
@@ -262,6 +262,33 @@ a {
   color: #666;
   a {
     font-weight: 700;
+  }
+}
+.search-form-container {
+  background-color: var(--contact-bg);
+  padding: 10px;
+  // border: 1px solid var(--contact-bdr);
+  width: 70%;
+  border-radius: 9px;
+  label {
+    // display: block;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    color: var(--text-secondary-color);
+  }
+  input[type=text]
+   {
+    appearance: none;
+    border: 1px solid var(--card-shadow);
+    color: var(--text-secondary-color);
+    border-radius: 6px;
+    line-height: 32px;
+    padding: 6px 12px;
+    width: calc(50% - 24px);
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    background-color: var(--input-bg);
+    font-family: $font-family;
   }
 }
 .form-container {

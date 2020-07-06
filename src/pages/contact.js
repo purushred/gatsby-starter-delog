@@ -17,16 +17,16 @@ const ContactPage = ({
       <div className="two-grids -contact">
         <div className="post-thumbnail" style={{backgroundImage: `url('/assets/alexander-andrews-HgUDpaGPTEA-unsplash.jpg')`, marginBottom: 0}}>
           <h1 className="post-title">Get in Touch</h1>
-          <p>Let me help you kick start your next project &rarr;</p>
+          <p>Let me know your feedback on the site &rarr;</p>
         </div>
         <div>
-          <form className="form-container" action="https://sendmail.w3layouts.com/SubmitContactForm" method="post">
+          <form className="form-container" action="#" method="post">
             <div>
-              <label htmlFor="w3lName">Name</label>
+              <label htmlFor="w3lName">Name (Optional)</label>
               <input type="text" name="w3lName" id="w3lName"/>
             </div>
             <div>
-              <label htmlFor="w3lSender">Email</label>
+              <label htmlFor="w3lSender">Email Name (Optional)</label>
               <input type="email" name="w3lSender" id="w3lSender"/>
             </div>
             <div>
