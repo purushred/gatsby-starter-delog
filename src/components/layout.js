@@ -21,11 +21,17 @@ export default ({ children }) => {
         <div className="site-title">
           <Link to="/">{data.site.siteMetadata.title}</Link>
         </div>
+        <div className="site-nav-link">
+          <Link to="/">Home</Link>
+        </div>
+        <div className="site-nav-link">
+          <Link to="/">Images</Link>
+        </div>
         <Navigation />
       </header>
       {children}
       <footer className="site-footer">
-        <p>&copy; {new Date().getFullYear()} PullVM &bull; </p>
+        <p>&copy; {new Date().getFullYear()} PullVM</p>
       </footer>
     </div>
   )
